@@ -3,7 +3,6 @@ package com.prueba.pruebaAPI.funciones.WSAA;
 import java.io.*;
 import java.util.Properties;
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;
 
 public class ConnectAndResponseWSAA {
@@ -15,7 +14,6 @@ public class ConnectAndResponseWSAA {
 
         String[] TokenAndSign = new String[3];
         RequestWSAA inicio = new RequestWSAA();
-        Properties prop = new Properties();
         String respuesta = null;
 
         

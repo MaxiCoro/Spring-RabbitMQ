@@ -4,22 +4,15 @@ import com.prueba.pruebaAPI.dominio.Comprobante;
 import com.prueba.pruebaAPI.validacion.*;
 import com.prueba.pruebaAPI.funciones.WSAA.*;
 import com.prueba.pruebaAPI.funciones.generacionPDF.GeneracionPDF;
-import com.prueba.pruebaAPI.funciones.horarioServerAfip.HorarioAfip;
 import java.io.IOException;
 import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.json.JSONObject;
-import org.json.XML;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class WSFE {
 
     private String resultadoFinal;
-
-    @Autowired
-    GeneracionPDF generacionPDF;
 
     public WSFE() {
         this.resultadoFinal = "";
